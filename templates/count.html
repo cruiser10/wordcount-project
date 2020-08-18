@@ -1,0 +1,14 @@
+<h1>words in your text {{ count }}</h1>
+
+<h1>Your text:</h1>
+{{ fulltext }}
+
+<h1>word count</h1>
+
+{% for word, counttotal in newdict %}
+
+{{ word }} - {{ counttotal }}
+<br />
+
+
+{% endfor %}
